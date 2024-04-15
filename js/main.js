@@ -1,6 +1,5 @@
 import { bindChange } from "./fileAdd";
 
-
 bindChange()
 
 import { initializeScaleControl } from './scaleControl.js';
