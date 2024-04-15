@@ -563,25 +563,32 @@ main {
 }
 
 .effect-level__value {
-  /* display: none; */
-  height: 100%;
-  width:100%;
+  /* Основные настройки внешнего вида трека */
+  -webkit-appearance: none;  /* Убирает стандартный стиль в Webkit */
+  width: 100%; /* Ширина на всю доступную длину */
+  height: 8px; /* Высота трека */
+  background: #ddd; /* Цвет фона трека */
+  border-radius: 4px; /* Скругление углов трека */
+  outline: none; /* Убирает контур при фокусе */
 }
 
+.effect-level__value::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
-/* .effect-level .effect-level__slider {
-  display: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  background: red;
-  border-radius: 34px;
-} */
+.effect-level__value:focus::-webkit-slider-thumb {
+  background: #333;
+}
 
-/**
- * Блок с эффектами, которые можно применить к изображению
- */
+.effect-level__value:hover::-webkit-slider-thumb {
+  background: #555;
+}
+
 
 .effects {
   margin: 0;
