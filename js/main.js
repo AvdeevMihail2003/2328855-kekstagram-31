@@ -10,10 +10,6 @@ import {effectSelector} from './effectSelector.js'
 
 effectSelector();
 
-import { fetchData } from './4.1.js';
-
-fetchData();
-
 import { showError } from './4.2.js';
 
 showError();
