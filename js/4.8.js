@@ -1,8 +1,13 @@
 function updateCommentsCount(visible, total) {
-  document.querySelector('.social__comment-count').textContent = `${visible} из ${total} комментариев`;
+  const commentCountElement = document.querySelector('.social__comment-count');
+  commentCountElement.textContent = `${visible} из ${total} комментариев`;
+
+  const loadMoreButton = document.querySelector('.comments-loader');
   if (visible >= total) {
-    document.querySelector('.comments-loader').classList.add('hidden');
+    loadMoreButton.classList.add('hidden');
   } else {
-    document.querySelector('.comments-loader').classList.remove('hidden');
+    loadMoreButton.classList.remove('hidden');
   }
 }
+
+export { updateCommentsCount };

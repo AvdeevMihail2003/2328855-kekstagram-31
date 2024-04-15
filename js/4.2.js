@@ -6,3 +6,5 @@ function showError() {
     errorMessageElement.remove();
   }, 5000);
 }
+
+export { showError };

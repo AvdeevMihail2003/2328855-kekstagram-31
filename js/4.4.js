@@ -9,3 +9,5 @@ function showBigPicture(image) {
 
   displayComments(image.comments);
 }
+
+export { showBigPicture };

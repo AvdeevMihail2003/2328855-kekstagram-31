@@ -14,3 +14,6 @@ function displayThumbnails(images) {
     });
   });
 }
+
+export { displayThumbnails };
+

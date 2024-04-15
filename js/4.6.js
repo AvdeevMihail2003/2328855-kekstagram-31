@@ -1,8 +1,9 @@
 function displayComments(comments) {
+  const bigPicture = document.querySelector('.big-picture');
   const commentsList = bigPicture.querySelector('.social__comments');
   const commentTemplate = commentsList.querySelector('.social__comment');
 
-  commentsList.innerHTML = ''; // Очистить существующие комментарии
+  commentsList.innerHTML = '';
 
   const fragment = document.createDocumentFragment();
   comments.slice(0, 5).forEach(comment => {
@@ -16,3 +17,5 @@ function displayComments(comments) {
   commentsList.appendChild(fragment);
   updateCommentsCount(5, comments.length);
 }
+
+export { displayComments };

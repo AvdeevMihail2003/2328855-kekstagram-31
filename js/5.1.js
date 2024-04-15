@@ -1,12 +1,12 @@
-function defaultFilter(images) {
+export function defaultFilter(images) {
   return images;
 }
 
-function randomFilter(images) {
+export function randomFilter(images) {
   let shuffled = images.slice().sort(() => 0.5 - Math.random());
   return shuffled.slice(0, 10);
 }
 
-function discussedFilter(images) {
+export function discussedFilter(images) {
   return images.slice().sort((a, b) => b.comments.length - a.comments.length);
 }
