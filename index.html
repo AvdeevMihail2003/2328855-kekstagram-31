@@ -57,8 +57,7 @@
 
                   <!-- Изменение глубины эффекта, накладываемого на изображение -->
                   <fieldset class="img-upload__effect-level  effect-level">
-                    <input class="effect-level__value" type="number" step="any" name="effect-level" value="">
-                    <div class="effect-level__slider"></div>
+                    <input id="effectRange" class="effect-level__value" type="range" min="0" max="100" step="1" name="effect-level" value="100">
                   </fieldset>
 
                   <!-- Кнопка для закрытия формы редактирования изображения -->
@@ -234,6 +233,5 @@
       </section>
     </template>
     <script src="js/main.js" type="module"></script>
-    <script src="js/functions.js"></script>
 </body>
 </html>
